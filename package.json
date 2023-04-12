@@ -1,0 +1,20 @@
+{
+  "name": "sorting-visualizer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gabriel-hahn/sorting-visualizer.git",
+  "author": "Gabriel Hahn Schaeffer <gabriel_hahn@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="./assets/icon.png" />
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Sorting Visualizer</title>
+</head>
+<body>
+  <div class="container">
+    <header data-js="header" class="header">
+      <h1>Sorting Visualizer</h1>
+
+      <ul data-js="sort-types">
+        <li class="select" data-js="bubble">Bubble Sort</li>
+        <li data-js="heap">Heap Sort</li>
+        <li data-js="merge">Merge Sort</li>
+        <li data-js="quick">Quick Sort</li>
+      </ul>
+
+      <ul>
+        <li>Speed: <input data-js="sort-options-speed" class="reverse" type="range" min="15" max="200" value="110"></li>
+        <li>Array size: <input data-js="sort-options-size" type="range" min="10" max="100" value="60"></li>
+      </ul>
+
+      <ul data-js="generate" class="generate-container">
+        <li data-js="btn-new-array">Generate new array</li>
+        <li class="btn-sort" data-js="btn-sort">Sort</li>
+      </ul>
+    </header>
+    <section data-js="visualizer" class="visualizer-container">
+      <div data-js="list-container" class="list-container"></div>
+    </section>
+  </div>
+
+  <script src="./dist/bundle.js"></script>
+</body>
+</html>
